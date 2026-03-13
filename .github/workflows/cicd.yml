@@ -8,6 +8,8 @@ on:
 jobs:
   build-test-deploy:
     runs-on: ubuntu-latest
+    - name: Build Docker image
+  run: docker build -f path/to/Dockerfile .
 
     steps:
       - name: Checkout Code
